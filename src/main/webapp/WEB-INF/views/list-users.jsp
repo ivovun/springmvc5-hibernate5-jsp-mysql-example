@@ -48,7 +48,7 @@
 							</c:url>
 
 							<tr>
-								<td>${tempUser.firstName}</td>
+								<td>${tempUser.name}</td>
 								<td>${tempUser.lastName}</td>
 								<td>${tempUser.email}</td>
 
