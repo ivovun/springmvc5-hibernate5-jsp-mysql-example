@@ -34,8 +34,8 @@
 							<th>Action</th>
 						</tr>
 
-						<!-- loop over and print our customers -->
-						<c:forEach var="tempUser" items="${customers}">
+						<!-- loop over and print our users -->
+						<c:forEach var="tempUser" items="${users}">
 
 							<!-- construct an "update" link with customer id -->
 							<c:url var="updateLink" value="/customer/updateForm">
