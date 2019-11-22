@@ -6,12 +6,12 @@ import net.javaguides.springmvc.entity.User;
 
 public interface UserService {
 
-	public List<User> getCustomers();
+	public List<User> getUsers();
 
-	public void saveCustomer(User theUser);
+	public void saveUser(User theUser);
 
-	public User getCustomer(int theId);
+	public User getUser(int theId);
 
-	public void deleteCustomer(int theId);
+	public void deleteUser(int theId);
 	
 }

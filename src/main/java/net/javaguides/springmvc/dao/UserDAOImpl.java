@@ -20,7 +20,7 @@ public class UserDAOImpl implements UserDAO {
 	private SessionFactory sessionFactory;
 
 	@Override
-	public List<User> getCustomers() {
+	public List<User> getUsers() {
 		Session session = sessionFactory.getCurrentSession();
 		CriteriaBuilder cb = session.getCriteriaBuilder();
 		CriteriaQuery<User> cq = cb.createQuery(User.class);
@@ -31,20 +31,20 @@ public class UserDAOImpl implements UserDAO {
 	}
 
 	@Override
-	public void deleteCustomer(int id) {
+	public void deleteUser(int id) {
 		Session session = sessionFactory.getCurrentSession();
 		User book = session.byId(User.class).load(id);
 		session.delete(book);
 	}
 
 	@Override
-	public void saveCustomer(User theUser) {
+	public void saveUser(User theUser) {
 		Session currentSession = sessionFactory.getCurrentSession();
 		currentSession.saveOrUpdate(theUser);
 	}
 
 	@Override
-	public User getCustomer(int theId) {
+	public User getUser(int theId) {
 		Session currentSession = sessionFactory.getCurrentSession();
 		User theUser = currentSession.get(User.class, theId);
 		return theUser;
