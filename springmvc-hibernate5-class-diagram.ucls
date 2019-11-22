@@ -45,7 +45,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="5" language="java" name="net.javaguides.springmvc.dao.CustomerDAO" 
+  <interface id="5" language="java" name="net.javaguides.springmvc.dao.UserDAO"
     project="springmvc5-hibernate5-jsp-mysql-example" 
     file="/springmvc5-hibernate5-jsp-mysql-example/src/main/java/net/javaguides/springmvc/dao/CustomerDAO.java" 
     binary="false" corner="BOTTOM_RIGHT">    
@@ -56,7 +56,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="6" language="java" name="net.javaguides.springmvc.dao.CustomerDAOImpl" 
+  <class id="6" language="java" name="UserDAOImpl"
     project="springmvc5-hibernate5-jsp-mysql-example" 
     file="/springmvc5-hibernate5-jsp-mysql-example/src/main/java/net/javaguides/springmvc/dao/CustomerDAOImpl.java" 
     binary="false" corner="BOTTOM_RIGHT">    

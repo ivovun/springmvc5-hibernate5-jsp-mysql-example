@@ -7,25 +7,24 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
+import net.javaguides.springmvc.entity.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import net.javaguides.springmvc.entity.Customer;
-
 @Repository
-public class CustomerDAOImpl implements CustomerDAO {
+public class UserDAOImpl implements UserDAO {
 
 	@Autowired
 	private SessionFactory sessionFactory;
 
 	@Override
-	public List<Customer> getCustomers() {
+	public List<User> getCustomers() {
 		Session session = sessionFactory.getCurrentSession();
 		CriteriaBuilder cb = session.getCriteriaBuilder();
-		CriteriaQuery<Customer> cq = cb.createQuery(Customer.class);
-		Root<Customer> root = cq.from(Customer.class);
+		CriteriaQuery<User> cq = cb.createQuery(User.class);
+		Root<User> root = cq.from(User.class);
 		cq.select(root);
 		Query query = session.createQuery(cq);
 		return query.getResultList();
@@ -34,7 +33,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 	@Override
 	public void deleteCustomer(int id) {
 		Session session = sessionFactory.getCurrentSession();
-		Customer book = session.byId(Customer.class).load(id);
+		User book = session.byId(User.class).load(id);
 		session.delete(book);
 	}
 
@@ -45,7 +44,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 	}
 
 	@Override
-	public Customer getCustomer(int theId) {
+	public User getCustomer(int theId) {
 		Session currentSession = sessionFactory.getCurrentSession();
 		User theUser = currentSession.get(User.class, theId);
 		return theUser;

@@ -4,7 +4,7 @@ import java.util.List;
 
 import net.javaguides.springmvc.entity.Customer;
 
-public interface CustomerDAO {
+public interface UserDAO {
 
 	public List<Customer> getCustomers();
 
