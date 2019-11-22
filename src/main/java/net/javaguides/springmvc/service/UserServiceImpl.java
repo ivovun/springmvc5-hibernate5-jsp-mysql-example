@@ -10,7 +10,7 @@ import net.javaguides.springmvc.dao.UserDAO;
 import net.javaguides.springmvc.entity.User;
 
 @Service
-public class CustomerServiceImpl implements CustomerService {
+public class UserServiceImpl implements UserService {
 
 	@Autowired
 	private UserDAO userDAO;

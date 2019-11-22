@@ -19,7 +19,7 @@ import net.javaguides.springmvc.service.CustomerService;
 public class CustomerController {
 
 	@Autowired
-	private CustomerService customerService;
+	private UserService userService;
 	
 	@GetMapping("/list")
 	public String listCustomers(Model theModel) {

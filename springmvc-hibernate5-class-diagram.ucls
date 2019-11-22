@@ -67,7 +67,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="7" language="java" name="net.javaguides.springmvc.service.CustomerService" 
+  <interface id="7" language="java" name="net.javaguides.springmvc.service.UserService"
     project="springmvc5-hibernate5-jsp-mysql-example" 
     file="/springmvc5-hibernate5-jsp-mysql-example/src/main/java/net/javaguides/springmvc/service/CustomerService.java" 
     binary="false" corner="BOTTOM_RIGHT">    
@@ -78,7 +78,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="8" language="java" name="net.javaguides.springmvc.service.CustomerServiceImpl" 
+  <class id="8" language="java" name="UserServiceImpl"
     project="springmvc5-hibernate5-jsp-mysql-example" 
     file="/springmvc5-hibernate5-jsp-mysql-example/src/main/java/net/javaguides/springmvc/service/CustomerServiceImpl.java" 
     binary="false" corner="BOTTOM_RIGHT">    
