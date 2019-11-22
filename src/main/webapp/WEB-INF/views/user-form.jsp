@@ -20,7 +20,7 @@
 				Example</h2>
 			<div class="panel panel-info">
 				<div class="panel-heading">
-					<div class="panel-title">Add Customer</div>
+					<div class="panel-title">Add User</div>
 				</div>
 				<div class="panel-body">
 					<form:form action="saveCustomer" cssClass="form-horizontal"
